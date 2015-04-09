@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vuePrenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textPrenom"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/vueNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textNom"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vueTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textTelephone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vueAdresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textAdresse"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/vueCp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textCp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/vueVille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/textVille"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>

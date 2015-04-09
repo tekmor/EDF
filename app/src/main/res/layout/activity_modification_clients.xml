@@ -1,0 +1,255 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.btssio.edf_ronan.EditClientsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textIdentifiant"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/infoIdentifiant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textInfos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textIdentite"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/infoIdentite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textInfos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textTelephone"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/infoTelephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textInfos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textAdresse"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/infoAdresse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textInfos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textCompteur"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/infoCompteur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textInfos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/textAncienReleve"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/infoAncienReleve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textInfos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textDateAncienReleve"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/infoDateAncienReleve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textInfos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textReleve"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/infoReleve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="#FFFFFF">
+
+                    <requestFocus />
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textDateReleve"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/infoDateReleve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textSituation"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/infoSituation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/buttonEnregistrer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textButtonEnregistrer" />
+
+            <Button
+                android:id="@+id/buttonAnnuler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textButtonAnnuler" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/buttonGeolocalisation"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textButtonGeolocalisation" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
