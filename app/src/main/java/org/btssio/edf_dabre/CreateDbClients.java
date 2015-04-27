@@ -33,6 +33,12 @@ public class CreateDbClients extends SQLiteOpenHelper {
             + COL_SIGNATUREBASE64 + " TEXT," + COL_DERNIERRELEVE + " REAL,"
             + COL_SITUATION + " INTEGER" + ");";
 
+    /**
+     * @param context
+     * @param name
+     * @param factory
+     * @param version
+     */
     public CreateDbClients(Context context, String name, CursorFactory factory, int version) {
         super(context, name, factory, version);
     }

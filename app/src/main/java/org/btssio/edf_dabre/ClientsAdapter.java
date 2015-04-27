@@ -20,21 +20,37 @@ public class ClientsAdapter extends BaseAdapter {
         listClients = vListClient;
     }
 
+    /**
+     * @return la taille de la liste client
+     */
     @Override
     public int getCount() {
         return this.listClients.size();
     }
 
+    /**
+     * @param position
+     * @return un client de la liste
+     */
     @Override
     public Object getItem(int position) {
         return listClients.get(position);
     }
 
+    /**
+     * @param position
+     * @return l'ID du client
+     */
     @Override
     public long getItemId(int position) {
         return position;
     }
 
+    /**
+     * @param position
+     * @param convertView
+     * @param parent
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;

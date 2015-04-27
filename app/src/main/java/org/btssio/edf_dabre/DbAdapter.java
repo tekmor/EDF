@@ -45,21 +45,35 @@ public class DbAdapter {
     private Context context;
     private SQLiteDatabase db;
 
+    /**
+     * @param context
+     */
     public DbAdapter(Context context) {
         this.context = context;
         dbClients = new CreateDbClients(context, NOM_BDD, null, VERSION_BDD);
     }
 
+    /**
+     * Permet d'ouvrir la connexion à la base
+     */
     public DbAdapter open() {
         db = dbClients.getWritableDatabase();
         return this;
     }
 
+    /**
+     * Permet de fermer la connexion à la base
+     */
     public DbAdapter close() {
         db.close();
         return null;
     }
 
+    /**
+     * Permet d'insérer un client
+     *
+     * @param client
+     */
     public long insererClient(Clients client) {
         ContentValues values = new ContentValues();
 
@@ -81,6 +95,11 @@ public class DbAdapter {
         return db.insert(TABLE_CLIENTS, null, values);
     }
 
+    /**
+     * Récupère le client avec son ID
+     * @param identifiant
+     * @return le client avec son ID
+     */
     public Clients getClientWithId(String identifiant) {
         Cursor c = db.query(TABLE_CLIENTS, new String[]{COL_ID, COL_NOM, COL_PRENOM, COL_ADRESSE,
                 COL_CP, COL_VILLE, COL_TEL, COL_IDCOMPTEUR,
@@ -119,6 +138,11 @@ public class DbAdapter {
         return client;
     }
 
+    /**
+     * Mise à jour d'un client
+     * @param identifiant
+     * @param client
+     */
     public int updateClient(String identifiant, Clients client) {
         ContentValues values = new ContentValues();
 
@@ -140,6 +164,10 @@ public class DbAdapter {
         return db.update(TABLE_CLIENTS, values, COL_ID + " = '" + identifiant + "'", null);
     }
 
+    /**
+     * Supprime un client avec son ID
+     * @param identifiant
+     */
     public int removeClientWithID(String identifiant) {
         return db.delete(TABLE_CLIENTS, COL_ID + " = '" + identifiant + "'", null);
     }
